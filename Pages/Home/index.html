@@ -1,0 +1,50 @@
+<!-- Aluno: Luis Gustavo BSI 18 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../Home/styles.css" />
+  <script src="../../js/script.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+
+  <ul>
+    <li><a class="active" href="../Home/index.html">Home</a></li>
+    <li><a href="../Forms/index.html">Formularios</a></li>
+    <li><a href="../About/index.html">Sobre</a></li>
+  </ul>
+
+  <form class="login-form">
+
+    <!-- Input do Nome do Aluno -->
+    <label for="name">Nome do Aluno: </label>
+    <input type="text" id="name"> </br>
+
+    <label for="nota-1">Primeira Nota: </label>
+    <input type="text" id="nota-1"> </br>
+
+    <label for="nota-2">Segunda Nota: </label>
+    <input type="text" id="nota-2"> </br>
+
+    <label for="nota-3">Terceira Nota: </label>
+    <input type="text" id="nota-3"> </br>
+
+    <!-- Input type - Submit/Enviar -->
+    <input type="button" onclick="mostrarAluno();calcularMedia();" value="Calcular Média">
+
+    <div class="text-input">
+      <p id="nome-aluno"></p>
+      <p id="media-aluno"></p>
+      <p id="situacao"></p>
+    </div>
+  </form>
+
+  <footer>
+    <a>Autor: Luis Gustavo Souza Souto</a>
+    <p id="hora"></p>
+  </footer>
+</body>
+</html>
